@@ -1,0 +1,19 @@
+/* technical selectors */
+
+.hide-container{
+    display: none;
+}
+
+.show-container{
+    display: flex;
+}
+
+.active-tab,
+.form-active,
+.show-container_block{
+    display: block;
+}
+
+.menu-active{
+    border-bottom: 4px solid #c0a172;
+}

@@ -1,0 +1,1306 @@
+@font-face {
+	font-family: 'Montserrat-Medium';
+	src: url('../fonts/Montserrat-Medium.ttf');
+}
+
+@font-face {
+	font-family: 'Montserrat-Regular';
+	src: url('../fonts/Montserrat-Regular.ttf');
+}
+
+@font-face {
+	font-family: 'Montserrat-SemiBold';
+	src: url('../fonts/Montserrat-SemiBold.ttf');
+}
+
+@font-face {
+	font-family: 'Montserrat-Bold';
+	src: url('../fonts/Montserrat-Bold.ttf');
+}
+
+@font-face {
+	font-family: 'NewYorkExtraLarge-RegularItalic';
+	src: url('../fonts/NewYorkExtraLarge-RegularItalic.ttf');
+}
+
+@font-face {
+	font-family: 'AvenirNext';
+	src: url('../fonts/AvenirNextLTPro-Regular.otf');
+}
+
+*,
+*:before,
+*:after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Montserrat-Medium";
+    font-size: 14px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.header{
+    width: 100%;
+    height: 100px;
+}
+
+.header__nav{
+    width: 1140px;
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.header__menu-buttons,
+.header__return-arrow,
+.header__menu-button,
+.header__categories-button{
+    display: none;
+}
+
+.header__logo-wrapper{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+.header__tabs-wrapper{
+    width: 555px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+.header__tab{
+    width: 127px;
+    height: 63px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4px;
+    border-bottom: 4px solid transparent;
+    cursor: pointer;
+}
+
+.header__oduvan-farm{
+    color: #c0a172;
+} 
+
+.header__buttons-wrapper{
+    width: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.header__account-button,
+.header__cart-button{
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* path */
+
+.path{
+    width: 100%;
+    height: 36px;
+    background: rgba(248,231,204,0.2);
+    border-top: 1px solid #C3C2C0;
+    border-bottom: 1px solid #C3C2C0;
+}
+
+.path__wrapper{
+    width: 610px;
+    height: 36px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.path__link{
+    font-size: 9px;
+    color: #6e6969;
+}
+  
+.path__arrow{
+    width: 8px;
+    margin: 0 30px;
+}
+
+/* dropdown menu */
+
+.dropdown{
+    width: 1140px;
+    margin: 0 auto;
+    padding-bottom: 30px;
+}
+
+.dropdown__wrapper{
+    width: 935px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.dropdown__category{
+    width: 465px;
+    margin-top: 30px;
+}
+
+.dropdown__title{
+    height: 22px;
+    font-size: 12px;
+    color: #c0a172;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.dropdown__link{
+    text-decoration: none;
+    font-size: 11px;
+    color: #6e6969;
+    text-transform: uppercase;
+}
+
+.dropdown__link:hover{
+    text-decoration: underline;
+}
+
+.dropdown__link p{
+    height: 22px;
+    line-height: 22px;
+}
+
+.oduvan-farm{
+    width: 1124px;
+    height: 360px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 80px;
+    padding-bottom: 0px;
+}
+
+.oduvan-category{
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.dropdown__brands{
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 12px;
+}
+
+.category-brands{
+    margin-top: 60px;
+}
+
+.oduvan-organic-logo{
+    width: 116px;
+    height: 100px;
+    margin-right: 75px;
+}
+
+.oduvan-hunt-logo{
+    width: 150px;
+    height: 100px;
+}
+
+.dropdown__restaurant{
+    width: 555px;
+    height: 360px;
+    padding-top: 30px;
+    background: #f8f8f8;
+}
+
+.restaurant-info__wrapper{
+    width: 450px;
+    margin: 0 auto;
+}
+
+.dropdown__restaurant-photo{
+    width: 450px;
+    height: 225px;
+    margin-top: 10px;
+}
+
+.dropdown__restaurant-info{
+    font-size: 10px;
+    line-height: 15px;
+    color: #6e6969;
+}
+
+.dropdown__restaurant-info > p{
+    height: 14px;
+}
+
+.dropdown__restaurant-info a{
+    text-decoration: underline;
+    color: #6e6969;
+}
+
+.account-form__wrapper{
+    width: 785px;
+    margin: 0 auto;
+}
+
+.log-in,
+.registration,
+.personal-data,
+.my-goods,
+.order-history{
+    display: none;
+}
+
+.account-form{
+    margin-bottom: 50px;
+}
+
+.account-form > div{
+    width: 385px;
+    position: relative;
+    margin: 0 auto;
+}
+
+.form-title{
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'NewYorkExtraLarge-RegularItalic';
+    font-weight: 400;
+    font-size: 24px;
+    color: #424242;
+}
+
+.input__label{
+    position: absolute;
+    left: 15px;
+    top: 5px;
+    font-size: 10px;
+    color: #6e6969;
+}
+
+.form__input{
+    width: 385px;
+    height: 60px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    font-size: 16px;
+    border: solid 1px #919191;
+}
+
+.form__submit{
+    width: 385px;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    font-family: 'Montserrat-Medium';
+    font-size: 14px;
+    text-transform: uppercase;
+    border: solid 1px rgba(0,0,0,0.25);
+    background: linear-gradient(180deg, #F2F2F2, #D4D4D4);
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+}
+
+.entrance-help{
+    height: 20px;
+    margin-bottom: 5px;
+    font-family: 'Montserrat-Regular';
+    text-align: center;
+    line-height: 20px;
+    color: #212121;
+}
+
+.entrance-link{
+    height: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 20px;
+    color: #212121;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.registration-form{
+    width: 100%;
+    height: 240px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    flex-wrap: wrap;
+}
+
+.personal-account{
+    width: 100%;
+    padding: 0 10px;
+}
+
+.account-tabs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #C3C2C0;
+}
+
+.account-tab{
+    width: 250px;
+    height: 45px;
+    position: relative;
+    top: 1px;
+    margin: 0 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-family: "Montserrat-SemiBold";
+    background: rgba(110,105,105,0.1);
+    border-bottom: 1px solid #C3C2C0;
+    cursor: pointer;
+}
+
+.selected-tab{
+    border: 1px solid #C3C2C0;
+    border-bottom: 1px solid white;
+    background: #ffffff;
+}
+
+.account-tab__arrow{
+    display: none;
+}
+
+.account-container .form-title{
+    display: none;
+}
+
+.cart-product{
+    width: 935px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border-bottom: 1px solid #979797;
+}
+
+.cart-product a{
+    text-decoration: none;
+    color: #424242;
+}
+
+.cart-product__name{
+    width: 385px;
+    height: 30px;
+    display: flex;
+    line-height: 30px;
+}
+
+.cart-product__description{
+    margin-left: 4px;
+}
+
+.cart-product__weight{
+    width: 385px;
+    height: 30px;
+    font-family: 'Montserrat-Medium';
+    font-size: 10px;
+    line-height: 30px;
+    color: #6e6969;
+}
+
+.price-wrapper{
+    width: 155px;
+    height: 70px;
+}
+
+.cart-product__total-price{
+    width: 145px;
+    height: 30px;
+    margin-left: 15px;
+    font-family: 'AvenirNext';
+    font-size: 14px;
+    font-weight: 400;
+    text-align: right;
+    line-height: 30px;
+    text-shadow: 0px 1px #ffffff;
+    color: #951320;
+}
+
+.cart-product__price-formula{
+    width: 145px;
+    height: 30px;
+    margin-left: 15px;
+    color: #424242;
+    text-align: right;
+    line-height: 30px;
+}
+
+.cart-product__counter{
+    width: 145px;
+    height: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 130px;
+}
+
+.counter-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: solid 1px #979797;
+    cursor: pointer;
+}
+
+.counter__input{
+    width: 45px;
+    height: 45px;
+    font-family: 'Montserrat-Regular';
+    font-size: 24px;
+    text-align: center;
+    color: #6e6969;
+    border: solid 1px #979797;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+.cart-product__delete{
+    width: 30px;
+    height: 30px;
+    margin-left: 65px;
+    cursor: pointer;
+}
+
+.order-history__wrapper{
+    width: 935px;
+    margin: 0 auto;
+}
+
+.product-tab{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #979797;
+    cursor: pointer;
+}
+
+.product-tab__title{
+    height: 20px;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 16px;
+    color: #1c1c1e;
+}
+
+.product-tab__arrow{
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+}
+
+.order-history__product{
+    width: 935px;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    border-bottom: 1px solid #979797;
+}
+
+.order-history__product a{
+    text-decoration: none;
+    color: #424242;
+}
+
+.repeat-button{
+    width: 30px;
+    height: 30px;
+    margin-left: 355px;
+    cursor: pointer;
+}
+
+.personal-data{
+    width: 800px;
+    margin: 0 auto;
+}
+
+/* cart */
+
+.cart__total-price{
+    width: 935px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    margin: 35px auto 0;
+    color: #951320;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 21px;
+    border-bottom: 1px solid #979797;
+}
+
+.cart__submit{
+    width: 225px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 35px 0 0 815px;
+    font-family: 'Montserrat-Medium';
+    font-size: 14px;
+    text-transform: uppercase;
+    border: solid 1px rgba(0,0,0,0.25);
+    background: linear-gradient(180deg, #F2F2F2, #D4D4D4);
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.cart-form{
+    width: 750px;
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.cart-data__title{
+    width: 750px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color: #1c1c1e;
+    font-family: 'Montserrat-SemiBold';
+    font-size: 16px;
+}
+
+.form__input_cart{
+    width: 365px;
+}
+
+.cart__order-time{
+    width: 750px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.order-time__wrapper{
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.clock-icon__wrapper{
+    margin-right: 10px;
+}
+
+.clock-icon{
+    width: 45px;
+    height: 45px;
+}
+
+.order-time__title{
+    color: #1c1c1e;
+    font-family: 'Montserrat-SemiBold';
+}
+
+.order-time__form > label{
+    position: relative;
+    left: 25px;
+    bottom: 20px;
+    font-size: 10px;
+    color: #6e6969;
+}
+
+.order-time__input{
+    width: 80px;
+    height: 60px;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+.cart-data__payment{
+    width: 750px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+.payment__form div{
+    width: 200px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+}
+
+.payment__form label{
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    margin-left: 15px;
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.payment__form label:before{
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: -15px;
+    bottom: -3px;
+    background: url('../img/not-checked.svg') center no-repeat;
+}
+
+.payment__form input[type=radio]{
+    display: none;
+}
+
+.payment__form input[type=radio]:checked + label:before{
+    background: url('../img/checked.svg') center no-repeat;
+}
+
+.cart-data__submit{
+    width: 305px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 58px;
+    font-family: 'Montserrat-Medium';
+    font-size: 14px;
+    text-transform: uppercase;
+    border: solid 1px rgba(0,0,0,0.25);
+    background: linear-gradient(180deg, #F2F2F2, #D4D4D4);
+    box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.cart-data__agreement{
+    width: 750px;
+    height: 30px;
+    margin: 30px auto 0;
+}
+
+/* agreement checkbox */
+
+.agreement{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+.agreement + label{
+    position: relative;
+    padding: 0 0 0 55px;
+    cursor: pointer;
+    font-size: 10px;
+    color: #6e6969;
+}
+
+.agreement + label:before{
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    background: #c0a172;
+    transition: .2s;
+}
+
+.agreement + label:after{
+    content: '';
+    position: absolute;
+    top: -3.2px;
+    left: 0.8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #FFF;
+    transition: .2s;
+}
+
+.agreement:checked + label:before {
+    background: #728a46;
+}
+
+.agreement:checked + label:after {
+    left: 21px;
+}
+
+/*  */
+
+.farm-production,
+.hunt-delicacy,
+.for-children,
+.oduvan-farm,
+.account,
+.personal-account,
+.cart,
+.cart-data,
+.menu,
+.degustation,
+.categories{
+    display: none;
+    position: relative;
+    background: white;
+    z-index: 10;
+}
+
+
+@media(max-width: 1199px){
+    .header__nav{
+        width: 960px;
+    }
+
+    .header__tabs-wrapper{
+        width: 625px;
+    }
+
+    .header__tab{
+        width: 144px;
+    }
+
+    .header__buttons-wrapper{
+        width: 65px;
+    }
+
+    .dropdown{
+        width: 960px;
+    }
+
+    .dropdown__wrapper{
+        width: 785px;
+    }
+
+    .dropdown__category{
+        width: 380px;
+    }
+
+    .dropdown__restaurant{
+        width: 485px;
+    }
+
+    .restaurant-info__wrapper{
+        width: 360px;
+    }
+
+    .dropdown__restaurant-photo{
+        width: 360px;
+    }
+
+    .dropdown__restaurant-info{
+        width: 300px;
+    }
+
+    .dropdown__restaurant-info > p{
+        display: inline;
+    }
+
+    .account-container{
+        width: 785px;
+        margin: 0 auto;
+    }
+
+    .cart-product{
+        width: 785px;
+    }
+
+    .cart-product__total-price,
+    .cart-product__price-formula{
+        margin-left: 10px;
+    }
+
+    .cart-product__counter{
+        margin-left: 25px;
+    }
+
+    .cart-product__delete{
+        margin-left: 40px;
+    }
+
+    .order-history__wrapper,
+    .order-history__product{
+        width: 785px;
+    }
+
+    .repeat-button{
+        margin-left: 210px;
+    }
+
+    .cart__total-price{
+        width: 785px;
+    }
+
+    .cart__submit{
+        margin-left: 650px;
+    }
+
+    .cart-data__title,
+    .cart-form,
+    .cart__order-time,
+    .cart-data__payment,
+    .cart-data__agreement{
+        width: 625px;
+    }
+
+    .cart-form > div,
+    .form__input_cart{
+        width: 305px;
+    }
+
+    .order-time__wrapper{
+        margin-right: 53px;
+    }
+
+    .cart-data__submit{
+        margin-right: 0;
+    }
+
+    .agreement + label{
+        padding-left: 50px;
+    }
+}
+
+@media(max-width: 991px){
+    body{
+        width: 991px;
+    }
+}
+
+@media(max-width: 575px){
+    body{
+        width: 100%;
+        padding: 0 8px;
+    }
+
+    .header{
+        height: 52px;
+        border-bottom: 1px solid #C3C2C0;
+    }
+
+    .header__nav{
+        width: 100%;
+        height: 52px;
+        position: relative;
+    }
+
+    .header__return-arrow{
+        width: 75px;
+        justify-content: flex-start;
+        align-items: center;
+        margin-left: 8px;
+    }
+
+    .return-arrow__img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .header__menu-buttons{
+        width: 75px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 8px;
+    }
+
+    .header__menu-button,
+    .header__categories-button{
+        display: block;
+    }
+
+    .header__logo-wrapper{
+        position: absolute;
+        left: calc(100%/2 - 60px);
+        margin-left: 0;
+    }
+
+    .header__tabs-wrapper,
+    .path{
+        display: none;
+    }
+
+    .header__buttons-wrapper{
+        width: 75px;
+    }
+
+    .dropdown,
+    .account-form__wrapper{
+        width: 100%;
+    }
+
+    .account-form{
+        width: 300px;
+        margin: 0 auto 30px;
+    }
+
+    .form-title{
+        width: 300px;
+        height: 60px;
+        justify-content: flex-start;
+        font-family: 'Montserrat-SemiBold';
+        font-size: 16px;
+        color: #1c1c1e;
+    }
+
+    .account-form > div,
+    .form__input,
+    .form__submit{
+        width: 300px;
+    }
+
+    .registration{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .registration-form{
+        flex-wrap: nowrap;
+        height: initial;
+    }
+
+    .personal-account{
+        padding: 0;
+    }
+
+    .personal-account .form-title{
+        width: 100%;
+        height: 52px;
+        padding-left: 30px;
+        border-bottom: 1px solid #C3C2C0;
+    }
+
+    .account-tabs{
+        flex-direction: column;
+    }
+
+    .account-tab{
+        width: 100%;
+        height: 52px;
+        display: flex;
+        justify-content: space-between;
+        margin: 0;
+        padding: 0 30px;
+        font-family: 'Montserrat-Medium';
+        background: white;
+    }
+
+    .selected-tab{
+        border: inherit;
+    }
+
+    .account-tab__arrow{
+        width: 20px;
+        height: 20px;
+        display: block;
+    }
+
+    .account-container{
+        width: 100%;
+    }
+
+    .account-container .form-title {
+        display: flex;
+    }
+
+    .my-goods,
+    .order-history{
+        padding: 0 22px;
+    }
+
+    .my-goods .form-title{
+        padding: 0;
+    }
+
+    .cart-product{
+        width: 100%;
+        height: 125px;
+        position: relative;
+    }
+
+    .cart-product__name{
+        width: 190px;
+        height: 60px;
+        flex-direction: column;
+        position: absolute;
+        top: 15px;
+    }
+
+    .cart-product__title{
+        width: 240px;
+        height: 20px;
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .cart-product__description{
+        height: 25px;
+        margin-left: 0;
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    .cart-product__weight{
+        width: 120px;
+        height: 16px;
+        position: absolute;
+        top: 60px;
+    }
+
+    .price-wrapper{
+        width: 140px;
+        height: 30px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        position: absolute;
+        bottom: 10px;
+    }
+
+    .cart-product__total-price{
+        width: 70px;
+        height: 30px;
+        margin-left: 0;
+    }
+
+    .cart-product__price-formula{
+        width: 70px;
+        margin-left: 0;
+    }
+
+    .cart-product__counter{
+        position: absolute;
+        bottom: 10px;
+        right: 0px;
+    }
+
+    .cart-product__delete{
+        position: absolute;
+        top: 15px;
+        right: 0px;
+    }
+
+    .order-history .form-title{
+        padding-left: 0;
+        font-family: 'Montserrat-Bold';
+    }
+
+    .order-history__product{
+        width: 100%;
+        height: 125px;
+        position: relative;
+    }
+
+    .order-history__wrapper{
+        width: 100%;
+    }
+
+    .order-history__repeat-button{
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+
+    .personal-data{
+        width: 300px;
+    }
+
+    .personal-data .form-title{
+        padding-left: 0;
+        border-bottom: none;
+    }
+
+    .cart{
+        padding: 0 22px;
+    }
+
+    .cart__total-price{
+        width: 100%;
+    }
+
+    .cart__submit{
+        width: 300px;
+        margin: 30px auto 0;
+    }
+
+    .cart-data{
+        padding: 0 22px;
+    }
+
+    .cart-data__title{
+        width: 100%;
+    }
+
+    .cart-form{
+        height: initial;
+        flex-wrap: nowrap;
+    }
+
+    .cart__order-time{
+        width: 300px;
+        height: 80px;
+        position: relative;
+        margin: -30px auto 0;
+    }
+
+    .order-time__wrapper{
+        flex-direction: column-reverse;
+        align-items: flex-start;
+        margin-right: 0;
+    }
+
+    .order-time__form{
+        position: absolute;
+        left: 50px;
+        bottom: 0px;
+    }
+
+    .order-time__title{
+        margin-bottom: 10px;
+    }
+
+    .order-time__input{
+        width: 105px;
+        height: 50px;
+    }
+
+    .cart-data__title{
+        width: 300px;
+    }
+
+    .cart-data__payment{
+        width: 300px;
+        height: 160px;
+    }
+
+    .cart-data__agreement{
+        width: 100%;
+    }
+
+    .payment__form div{
+        height: 40px;
+    }
+
+    .cart-data__submit{
+        order: 1;
+        margin: 30px auto 0;
+    }
+
+    .menu .form-title{
+        width: 100%;
+        padding-left: 30px;
+        border-bottom: 1px solid #C3C2C0; 
+    }
+
+    .restaurant__img{
+        width: 100%;
+    }
+
+    .restaurant__title{
+        font-size: 11px;
+        text-transform: uppercase;
+        padding: 25px 25px 25px 30px;
+        color: #6e6969;
+    }
+
+    .restaurant__subtitle{
+        font-family: "Montserrat-Regular";
+        font-size: 9px;
+        line-height: 14px;
+        padding: 15px 22px 15px 30px;
+        color: #6e6969;
+    }
+
+    .restaurant__subtitle > a{
+        text-decoration: underline;
+        color: #6e6969;
+    }
+    
+    .restaurant__button{
+        display: block;
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 55px;
+        color: #424242;
+        width: 300px;
+        height: 55px;
+        border: solid 1px rgba(0,0,0,0.25);
+        background: linear-gradient(180deg, #F2F2F2, #D4D4D4);
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+        margin: 0 auto;
+    }
+
+    .categories .dropdown-container{
+        width: 100%;
+    }
+
+    .categories .form-title{
+        padding-left: 22px;
+    }
+
+    .category-button .account-tab{
+        padding: 0 22px;
+    }
+
+    .filter-button{
+        width: 300px;
+        height: 52px;
+        display: block;
+        font-family: "Montserrat-Medium";
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 52px;
+        color: #424242;
+        border: solid 1px rgba(0,0,0,0.25);
+        background: linear-gradient(180deg, #F2F2F2, #D4D4D4);
+        box-shadow: 0px 1px 2px rgba(0,0,0,0.2);
+        margin: 50px auto 0;
+    }
+}
+
+
+
+
